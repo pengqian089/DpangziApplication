@@ -1,0 +1,25 @@
+﻿<div class="markdown-body"> @((MarkupString)_htmlContent)</div>
+
+@code {
+    [Parameter]
+    public string Markdown { get; set; }
+    
+    [Inject]
+    IJSRuntime JsRuntime { get; set; }
+
+    private string _htmlContent = "";
+
+    protected override async Task OnParametersSetAsync()
+    {
+        _htmlContent = Markdig.Markdown.ToHtml(Markdown ?? string.Empty);
+        await base.OnParametersSetAsync();
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if(firstRender)
+            await JsRuntime.InvokeVoidAsync("Prism.highlightAll");
+        await base.OnAfterRenderAsync(firstRender);
+    }
+
+}

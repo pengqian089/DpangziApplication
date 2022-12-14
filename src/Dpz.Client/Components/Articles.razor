@@ -1,0 +1,32 @@
+﻿@using Dpz.Client.Models
+@foreach (var item in Data)
+{
+    <MudCard>
+        @if (item.ImagesAddress.Any())
+        {
+            <MudCardMedia Image="@item.ImagesAddress.First()" Height="200"/>
+        }
+        <MudCardContent>
+            <MudText Typo="Typo.h5">
+                <MudLink Href="@($"/article/{item.Id}")">@item.Title</MudLink>
+            </MudText>
+            @((MarkupString)item.Introduction)
+        </MudCardContent>
+        <MudCardActions>
+            <MudIcon Icon="@Icons.Material.Filled.AccessTime" Color="Color.Info"/>
+            <MudText Typo="Typo.caption">
+                @item.CreateTime
+            </MudText>
+            <MudBadge Content="@item.ViewCount" Color="Color.Primary" Overlap="true" Class="mx-6 my-4">
+                <MudIcon Icon="@Icons.Material.Filled.RemoveRedEye" Color="Color.Info"/>
+            </MudBadge>
+        </MudCardActions>
+    </MudCard>
+}
+
+@code {
+
+    [Parameter]
+    public List<ArticleMiniModel> Data { get; set; }
+
+}

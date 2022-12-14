@@ -1,0 +1,41 @@
+﻿@page "/article/{Id}"
+
+
+@if (_loading)
+{
+    <MudCard>
+        <MudCardContent>
+            <MudSkeleton Width="30%" Height="42px;"/>
+            <MudSkeleton Width="80%"/>
+            <MudSkeleton Width="100%"/>
+            <MudSkeleton Width="100%"/>
+            <MudSkeleton SkeletonType="SkeletonType.Rectangle" Height="200px"/>
+            <MudSkeleton Width="100%"/>
+            <MudSkeleton Width="100%"/>
+            <MudSkeleton Width="100%"/>
+        </MudCardContent>
+        <MudCardActions>
+            <MudSkeleton Width="64px" Height="40px" Class="ml-2"/>
+            <MudSkeleton Width="105px" Height="40px" Class="ml-3"/>
+        </MudCardActions>
+    </MudCard>
+}
+else
+{
+    <div class="article-detail-title">
+        @_article.Title
+    </div>
+    <div class="article-detail-info">
+        <span>
+            <time class="timeago" datetime="@_article.CreateTime">@_article.CreateTime</time>发布
+        </span>
+        <span>作者：@_article.Author.Name</span>
+        <span>浏览量：@_article.ViewCount</span>
+    </div>
+    <div class="article-detail-content">
+        <blockquote class="introduction">
+            @((MarkupString)_article.Introduction)
+        </blockquote>
+        <MarkdownPreview Markdown="@_article.Markdown"></MarkdownPreview>
+    </div>
+}
