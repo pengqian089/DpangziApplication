@@ -1,7 +1,7 @@
 ﻿@using Dpz.Client.Models
 @foreach (var item in Data)
 {
-    <MudCard>
+    <MudCard Style="margin: 1em 0">
         @if (item.ImagesAddress.Any())
         {
             <MudCardMedia Image="@item.ImagesAddress.First()" Height="200"/>

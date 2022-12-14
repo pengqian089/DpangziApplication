@@ -1,6 +1,78 @@
 ﻿@page "/articles"
-<h3>ArticleList</h3>
+@page "/articles/{PageIndex:int}"
+@using Dpz.Client.Models
+@using Dpz.Client.Data
+@using Dpz.Client.Library
+
+@if (_isLoading)
+{
+    <MudCard>
+        <MudSkeleton SkeletonType="SkeletonType.Rectangle" Height="200px"/>
+        <MudCardContent>
+            <MudSkeleton Width="30%" Height="42px;"/>
+            <MudSkeleton Width="80%"/>
+            <MudSkeleton Width="100%"/>
+        </MudCardContent>
+        <MudCardActions>
+            <MudSkeleton Width="64px" Height="40px" Class="ml-2"/>
+            <MudSkeleton Width="105px" Height="40px" Class="ml-3"/>
+        </MudCardActions>
+    </MudCard>
+}
+else
+{
+    <Articles Data="_source.ToList()"></Articles>
+
+    <div style="margin: 1em 0">
+        <MudPagination
+            Rectangular="true"
+            Variant="Variant.Filled"
+            Count="_source.TotalPageCount"
+            BoundaryCount="0"
+            MiddleCount="2"
+            Selected="(PageIndex == 0 ? 1 : PageIndex)"
+            SelectedChanged="ToPageAsync"
+            @ref="_mudPagination"/>
+    </div>
+}
 
 @code {
-    
+    private bool _isLoading = false;
+
+        private const int PageSize = 10;
+
+    private IPagedList<ArticleMiniModel> _source = new PagedList<ArticleMiniModel>(new List<ArticleMiniModel>(), 1, 10);
+
+    [Inject]
+    private ArticleService ArticleService { get; set; }
+
+    [Inject]
+    private NavigationManager Navigation { get; set; }
+
+    [Parameter]
+    public int PageIndex { get; set; }
+
+    private MudPagination _mudPagination;
+
+    protected override async Task OnInitializedAsync()
+    {
+        PageIndex = PageIndex == 0 ? 1 : PageIndex;
+        await base.OnInitializedAsync();
+    }
+
+    private void ToPageAsync(int page)
+    {
+        PageIndex = page;
+        Navigation.NavigateTo($"/articles/{page}");
+    }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        _isLoading = true;
+        _source = await ArticleService.GetPageAsync(PageIndex, PageSize, "", "");
+        _isLoading = false;
+        PageIndex = _source.CurrentPageIndex;
+        await base.OnParametersSetAsync();
+    }
+
 }
