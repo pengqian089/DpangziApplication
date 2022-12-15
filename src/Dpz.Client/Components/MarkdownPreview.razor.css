@@ -4,7 +4,7 @@
 
 ::deep.markdown-body {
     font-size: 14px;
-    line-height: 1.8em;
+    line-height: 1.2em;
     /*height: 600px;*/
     overflow-y: auto;
 }
@@ -40,8 +40,7 @@
 }
 
 ::deep.markdown-body blockquote, ::deep.markdown-body p, ::deep.markdown-body ul, ::deep.markdown-body ol, ::deep.markdown-body pre, ::deep.markdown-body table {
-    margin: 0;
-    margin-bottom: 1em;
+    margin: 0 0 0.5em;
 }
 
 ::deep.markdown-body p, ::deep.markdown-body blockquote, ::deep.markdown-body li {

@@ -51,7 +51,8 @@ public static class MauiProgram
                 config.SnackbarConfiguration.SnackbarVariant = Variant.Filled;
             });
             
-
+            Log.Information("start application");
+            
             return builder.Build();
         }
         catch (Exception e)

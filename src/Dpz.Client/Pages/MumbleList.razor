@@ -1,0 +1,69 @@
+﻿@page "/mumble"
+@page "/mumble/{PageIndex:int}"
+
+@if (_isLoading)
+{
+    <MudCard>
+        <MudCardHeader>
+            <CardHeaderAvatar>
+                <MudSkeleton SkeletonType="SkeletonType.Circle" Animation="Animation.Wave" Height="40px" Width="40px"/>
+            </CardHeaderAvatar>
+            <CardHeaderContent>
+                <MudSkeleton Animation="Animation.Wave" Width="40%"/>
+                <MudSkeleton Animation="Animation.Wave" Width="60%"/>
+            </CardHeaderContent>
+        </MudCardHeader>
+        <MudSkeleton SkeletonType="SkeletonType.Rectangle" Animation="Animation.Wave" Height="250px"/>
+        <MudCardContent>
+            <MudSkeleton Animation="Animation.Wave"/>
+        </MudCardContent>
+        <MudCardActions>
+            <MudSkeleton SkeletonType="SkeletonType.Circle" Animation="Animation.Wave" Height="30px" Width="30px" Class="ml-2 mb-2"/>
+            <MudSkeleton SkeletonType="SkeletonType.Circle" Animation="Animation.Wave" Height="30px" Width="30px" Class="ml-3 mb-2"/>
+        </MudCardActions>
+    </MudCard>
+}
+else
+{
+    @foreach (var item in _source)
+    {
+        <MudCard Style="margin: 1em 0">
+            <MudCardHeader>
+                <CardHeaderAvatar>
+                    <MudAvatar Image="@item.Author.Avatar" Alt="@item.Author.Name"/>
+                </CardHeaderAvatar>
+                <CardHeaderContent>
+                    <MudText Typo="Typo.body1">@item.Author.Name</MudText>
+                    <MudText Typo="Typo.body2">@item.CreateTime</MudText>
+                </CardHeaderContent>
+            </MudCardHeader>
+            <MudCardContent>
+                <MarkdownPreview Markdown="@item.Markdown"/>
+            </MudCardContent>
+            <MudCardActions Style="border-top:1px solid var(--mud-palette-lines-default)">
+                <MudBadge Content="@item.Like" Color="Color.Primary" Overlap="true" Class="mx-6 my-4">
+                    <MudIconButton OnClick="async () => await LikeAsync(item.Id)" Icon="@Icons.Material.Filled.Favorite" Color="Color.Info"/>
+                </MudBadge>
+                <MudBadge Content="@item.CommentCount" Color="Color.Primary" Overlap="true" Class="mx-6 my-4">
+                    <MudToggleIconButton
+                        Icon="@Icons.Material.Filled.Comment"
+                        ToggledIcon="@Icons.Material.Filled.AddComment"
+                        Color="Color.Info"
+                        ToggledColor="Color.Info" />
+                </MudBadge>
+            </MudCardActions>
+        </MudCard>
+    }
+
+    <div style="margin: 1em 0">
+        <MudPagination
+            Rectangular="true"
+            Variant="Variant.Filled"
+            Count="_source.TotalPageCount"
+            BoundaryCount="0"
+            MiddleCount="2"
+            Selected="(PageIndex == 0 ? 1 : PageIndex)"
+            SelectedChanged="ToPageAsync"
+            @ref="_mudPagination"/>
+    </div>
+}

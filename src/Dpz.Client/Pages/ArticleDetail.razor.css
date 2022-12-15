@@ -21,4 +21,5 @@
 .article-detail-content>.introduction {
     border-left: 5px solid #d635ac;
     padding: 8px 15px;
+    margin-bottom: 1em;
 }

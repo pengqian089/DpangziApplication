@@ -21,5 +21,28 @@
 }
 else
 {
+    <MudCarousel 
+        Class="mud-width-full" 
+        Style="@BannerStyle()" 
+        ShowArrows="true" 
+        ShowBullets="true" 
+        EnableSwipeGesture="true" 
+        AutoCycle="true" 
+        TData="object">
+        @foreach (var item in _banner)
+        {
+            <MudCarouselItem Transition="Transition.Slide" Color="@Color.Primary">
+                <div class="d-flex" style="height:100%">
+                    <img src="@item.AccessUrl" alt="banner"/>
+                    <div class="banner-information">
+                        @if (!string.IsNullOrEmpty(item.Description))
+                        {
+                            <span>@item.Description</span>
+                        }
+                    </div>
+                </div>
+            </MudCarouselItem>
+        }
+    </MudCarousel>
     <Articles Data="_source"></Articles>
 }
