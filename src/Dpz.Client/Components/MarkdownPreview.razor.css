@@ -37,6 +37,7 @@
 
 ::deep.markdown-body ul, ::deep.markdown-body ol {
     padding-left: 2em;
+    list-style-type: disc !important;
 }
 
 ::deep.markdown-body blockquote, ::deep.markdown-body p, ::deep.markdown-body ul, ::deep.markdown-body ol, ::deep.markdown-body pre, ::deep.markdown-body table {

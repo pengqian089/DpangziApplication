@@ -17,3 +17,10 @@ function updateWindowWidth(objReference) {
 function getWindowWidth(){
     return window.innerWidth;
 }
+
+(function () {
+    var images = document.querySelectorAll(".mud-card-media,.markdown-body img,.d-flex img");
+
+    
+
+})();

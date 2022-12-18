@@ -1,10 +1,7 @@
-﻿using System.Text.Json;
-using Dpz.Client.Data;
+﻿using Dpz.Client.Data;
 using Dpz.Client.Models;
 using Microsoft.AspNetCore.Components;
-using Microsoft.Extensions.Logging;
 using Microsoft.JSInterop;
-using MudBlazor;
 
 namespace Dpz.Client.Pages;
 

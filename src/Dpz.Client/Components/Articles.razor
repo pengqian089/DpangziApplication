@@ -7,7 +7,7 @@
             <MudCardMedia Image="@item.ImagesAddress.First()" Height="200"/>
         }
         <MudCardContent>
-            <MudText Typo="Typo.h5">
+            <MudText Typo="Typo.h5" Style="line-height: 0;margin-bottom: .5em">
                 <MudLink Href="@($"/article/{item.Id}")">@item.Title</MudLink>
             </MudText>
             @((MarkupString)item.Introduction)

@@ -24,16 +24,18 @@ else
     <MudCarousel 
         Class="mud-width-full" 
         Style="@BannerStyle()" 
+        ShowDelimiters="true"
         ShowArrows="true" 
         ShowBullets="true" 
         EnableSwipeGesture="true" 
         AutoCycle="true" 
+        SelectedIndex="0"
         TData="object">
         @foreach (var item in _banner)
         {
             <MudCarouselItem Transition="Transition.Slide" Color="@Color.Primary">
                 <div class="d-flex" style="height:100%">
-                    <img src="@item.AccessUrl" alt="banner"/>
+                    <img src="@item.AccessUrl" alt="@item.Description"/>
                     <div class="banner-information">
                         @if (!string.IsNullOrEmpty(item.Description))
                         {
