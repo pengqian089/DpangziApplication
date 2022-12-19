@@ -38,7 +38,14 @@ else
         <blockquote class="introduction">
             @((MarkupString)_article.Introduction)
         </blockquote>
-        <MarkdownPreview Markdown="@_article.Markdown"></MarkdownPreview>
+        @if (_article.Tags.Any(x => x == "cnBeta"))
+        {
+            <MarkdownPreview Class="article" Markdown="@_article.Markdown"></MarkdownPreview>
+        }
+        else
+        {
+            <MarkdownPreview Markdown="@_article.Markdown"></MarkdownPreview>
+        }
     </div>
     <div style="margin: 1em 0">
         <MudText Typo="Typo.h5">评论区</MudText>

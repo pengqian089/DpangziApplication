@@ -62,6 +62,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="wwwroot\fonts\cascadia-code" />
       <Folder Include="wwwroot\lib" />
     </ItemGroup>
 

@@ -1,8 +1,18 @@
-﻿<div class="markdown-body"> @((MarkupString)_htmlContent)</div>
+﻿@if (string.IsNullOrEmpty(Class))
+{
+    <div class="markdown-body"> @((MarkupString)_htmlContent)</div>
+}
+else
+{
+    <div class="markdown-body @Class"> @((MarkupString)_htmlContent)</div>
+}
 
 @code {
     [Parameter]
     public string Markdown { get; set; }
+    
+    [Parameter]
+    public string Class { get; set; }
     
     [Inject]
     IJSRuntime JsRuntime { get; set; }

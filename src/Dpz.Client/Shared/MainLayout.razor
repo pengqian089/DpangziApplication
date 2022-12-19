@@ -35,8 +35,12 @@
     
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
+        
         if (firstRender)
         {
+            // var list = _mudThemeProvider.Theme.Typography.Default.FontFamily.ToList();
+            // list.Insert(0,"cascadia-code");
+            _mudThemeProvider.Theme.Typography.Default.FontFamily = new[] { "cascadia-code" };
             _isDarkMode = await _mudThemeProvider.GetSystemPreference();
             StateHasChanged();
         }

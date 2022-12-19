@@ -157,6 +157,22 @@
     background: #0d1117;
 }
 
+@font-face {
+    font-family: cascadia-code;
+    src: url("../fonts/cascadia-code/woff2/CascadiaCode.woff2") format('woff2'),url("../fonts/cascadia-code/ttf/CascadiaCode.ttf") format('truetype')
+}
+
+.article p{
+    text-align: justify;
+    text-justify: inter-ideograph;
+    text-indent: 2em;
+}
+
+.article img{
+    display: block;
+    margin: 0 auto;
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background: #32333dff;

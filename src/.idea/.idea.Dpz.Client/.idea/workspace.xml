@@ -7,32 +7,171 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="892f8572-8cb8-4c55-b3d7-367995ae7345" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Dpz.Client/Components/Comment/AddPicture.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dpz.Client/Components/Comment/Avatar.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dpz.Client/Components/Comment/Comment.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dpz.Client/Components/Comment/Comment.razor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dpz.Client/Components/Comment/CommentForm.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dpz.Client/Components/Comment/CommentList.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dpz.Client/Components/Comment/CommentList.razor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dpz.Client/Components/Comment/CommentList.razor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dpz.Client/Components/Comment/CommentText.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dpz.Client/Components/Comment/ShowNickName.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dpz.Client/Components/Comment/ShowNickName.razor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dpz.Client/Data/CommentService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dpz.Client/Enum/CommentNode.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dpz.Client/Library/AppTools.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dpz.Client/Models/CommentContentModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dpz.Client/Models/CommentModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dpz.Client/Models/SendComment.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaCode-Bold.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaCode-BoldItalic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaCode-ExtraLight.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaCode-ExtraLightItalic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaCode-Italic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaCode-Light.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaCode-LightItalic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaCode-Regular.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaCode-SemiBold.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaCode-SemiBoldItalic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaCode-SemiLight.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaCode-SemiLightItalic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaCodePL-Bold.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaCodePL-BoldItalic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaCodePL-ExtraLight.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaCodePL-ExtraLightItalic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaCodePL-Italic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaCodePL-Light.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaCodePL-LightItalic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaCodePL-Regular.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaCodePL-SemiBold.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaCodePL-SemiBoldItalic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaCodePL-SemiLight.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaCodePL-SemiLightItalic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaMono-Bold.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaMono-BoldItalic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaMono-ExtraLight.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaMono-ExtraLightItalic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaMono-Italic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaMono-Light.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaMono-LightItalic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaMono-Regular.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaMono-SemiBold.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaMono-SemiBoldItalic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaMono-SemiLight.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaMono-SemiLightItalic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaMonoPL-Bold.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaMonoPL-BoldItalic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaMonoPL-ExtraLight.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaMonoPL-ExtraLightItalic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaMonoPL-Italic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaMonoPL-Light.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaMonoPL-LightItalic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaMonoPL-Regular.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaMonoPL-SemiBold.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaMonoPL-SemiBoldItalic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaMonoPL-SemiLight.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/otf/static/CascadiaMonoPL-SemiLightItalic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/CascadiaCode.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/CascadiaCodeItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/CascadiaCodePL.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/CascadiaCodePLItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/CascadiaMono.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/CascadiaMonoItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/CascadiaMonoPL.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/CascadiaMonoPLItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaCode-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaCode-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaCode-ExtraLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaCode-ExtraLightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaCode-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaCode-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaCode-LightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaCode-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaCode-SemiBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaCode-SemiBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaCode-SemiLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaCode-SemiLightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaCodePL-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaCodePL-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaCodePL-ExtraLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaCodePL-ExtraLightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaCodePL-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaCodePL-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaCodePL-LightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaCodePL-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaCodePL-SemiBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaCodePL-SemiBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaCodePL-SemiLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaCodePL-SemiLightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaMono-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaMono-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaMono-ExtraLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaMono-ExtraLightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaMono-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaMono-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaMono-LightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaMono-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaMono-SemiBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaMono-SemiBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaMono-SemiLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaMono-SemiLightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaMonoPL-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaMonoPL-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaMonoPL-ExtraLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaMonoPL-ExtraLightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaMonoPL-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaMonoPL-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaMonoPL-LightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaMonoPL-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaMonoPL-SemiBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaMonoPL-SemiBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaMonoPL-SemiLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/ttf/static/CascadiaMonoPL-SemiLightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/CascadiaCode.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/CascadiaCodeItalic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/CascadiaCodePL.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/CascadiaCodePLItalic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/CascadiaMono.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/CascadiaMonoItalic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/CascadiaMonoPL.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/CascadiaMonoPLItalic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaCode-Bold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaCode-BoldItalic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaCode-ExtraLight.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaCode-ExtraLightItalic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaCode-Italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaCode-Light.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaCode-LightItalic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaCode-Regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaCode-SemiBold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaCode-SemiBoldItalic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaCode-SemiLight.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaCode-SemiLightItalic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaCodePL-Bold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaCodePL-BoldItalic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaCodePL-ExtraLight.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaCodePL-ExtraLightItalic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaCodePL-Italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaCodePL-Light.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaCodePL-LightItalic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaCodePL-Regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaCodePL-SemiBold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaCodePL-SemiBoldItalic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaCodePL-SemiLight.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaCodePL-SemiLightItalic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaMono-Bold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaMono-BoldItalic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaMono-ExtraLight.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaMono-ExtraLightItalic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaMono-Italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaMono-Light.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaMono-LightItalic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaMono-Regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaMono-SemiBold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaMono-SemiBoldItalic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaMono-SemiLight.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaMono-SemiLightItalic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaMonoPL-Bold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaMonoPL-BoldItalic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaMonoPL-ExtraLight.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaMonoPL-ExtraLightItalic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaMonoPL-Italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaMonoPL-Light.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaMonoPL-LightItalic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaMonoPL-Regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaMonoPL-SemiBold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaMonoPL-SemiBoldItalic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaMonoPL-SemiLight.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/fonts/cascadia-code/woff2/static/CascadiaMonoPL-SemiLightItalic.woff2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Dpz.Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dpz.Client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dpz.Client/Components/Articles.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Dpz.Client/Components/Articles.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dpz.Client/Models/MumbleModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Dpz.Client/Models/MumbleModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dpz.Client/Components/MarkdownPreview.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Dpz.Client/Components/MarkdownPreview.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dpz.Client/Dpz.Client.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Dpz.Client/Dpz.Client.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dpz.Client/Pages/ArticleDetail.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Dpz.Client/Pages/ArticleDetail.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dpz.Client/Pages/ArticleList.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Dpz.Client/Pages/ArticleList.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dpz.Client/Pages/MumbleList.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Dpz.Client/Pages/MumbleList.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dpz.Client/Platforms/Android/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Dpz.Client/Platforms/Android/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dpz.Client/Shared/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Dpz.Client/Shared/NavMenu.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dpz.Client/_Imports.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Dpz.Client/_Imports.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dpz.Client/Shared/MainLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Dpz.Client/Shared/MainLayout.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dpz.Client/wwwroot/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/css/app.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,6 +192,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5777bf9992ef49bcbe6af99221b3d20a822c00/6b/c7061f7b/MudComponentBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Dpz.Client/Platforms/Android/MainActivity.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Dpz.Client/Platforms/Android/MainApplication.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/project/dpz-client/src/Dpz.Client/_Imports.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -119,7 +259,7 @@
       <workItem from="1671012159561" duration="1510000" />
       <workItem from="1671068414050" duration="19096000" />
       <workItem from="1671419532411" duration="3731000" />
-      <workItem from="1671430926059" duration="7732000" />
+      <workItem from="1671430926059" duration="10142000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1671011684978</created>
@@ -142,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671099193929</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="comment">
+      <created>1671439316695</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1671439316695</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +313,7 @@
     <MESSAGE value="init" />
     <MESSAGE value="fix android error" />
     <MESSAGE value="banner and mumble page" />
-    <option name="LAST_COMMIT_MESSAGE" value="banner and mumble page" />
+    <MESSAGE value="comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="comment" />
   </component>
 </project>
