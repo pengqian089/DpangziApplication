@@ -1,4 +1,4 @@
-﻿@page "/article/{Id}"
+﻿@page "/article/read/{Id}"
 
 
 @if (_loading)
@@ -27,7 +27,9 @@ else
     </div>
     <div class="article-detail-info">
         <span>
-            <time class="timeago" datetime="@_article.CreateTime">@_article.CreateTime</time>发布
+            <MudTooltip Text="@_article.CreateTime.ToString("yyyy/MM/dd HH:mm:ss")">
+                <time datetime="@_article.CreateTime.ToString("yyyy/MM/dd HH:mm:ss")">@_article.CreateTime.TimeAgo()</time>发布
+            </MudTooltip>
         </span>
         <span>作者：@_article.Author.Name</span>
         <span>浏览量：@_article.ViewCount</span>
@@ -37,5 +39,10 @@ else
             @((MarkupString)_article.Introduction)
         </blockquote>
         <MarkdownPreview Markdown="@_article.Markdown"></MarkdownPreview>
+    </div>
+    <div style="margin: 1em 0">
+        <MudText Typo="Typo.h5">评论区</MudText>
+        <hr class="hr-5"/>
+        <Comment Node="CommentNode.Article" Relation="@_article?.Id"></Comment>
     </div>
 }

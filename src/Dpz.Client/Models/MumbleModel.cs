@@ -32,4 +32,6 @@ public class MumbleModel
     public int CommentCount { get; set; }
 
     public UserInfo Author { get; set; }
+
+    public bool ShowComment { get; set; }
 }

@@ -152,9 +152,19 @@
     }
 }
 
+.hr-5 {
+    height: 3px;
+    background: #0d1117;
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background: #32333dff;
         color: #ffffffb2;
     }
+
+    .hr-5 {
+        background: #7d9bb9;
+    }
 }
+

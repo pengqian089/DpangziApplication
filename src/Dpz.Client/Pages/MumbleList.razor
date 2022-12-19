@@ -34,7 +34,9 @@ else
                 </CardHeaderAvatar>
                 <CardHeaderContent>
                     <MudText Typo="Typo.body1">@item.Author.Name</MudText>
-                    <MudText Typo="Typo.body2">@item.CreateTime</MudText>
+                    <MudTooltip Text="@item.CreateTime.ToString("yyyy/MM/dd HH:mm:ss")">
+                        <MudText Typo="Typo.caption">@item.CreateTime.TimeAgo()发布</MudText>
+                    </MudTooltip>
                 </CardHeaderContent>
             </MudCardHeader>
             <MudCardContent>
@@ -49,9 +51,16 @@ else
                         Icon="@Icons.Material.Filled.Comment"
                         ToggledIcon="@Icons.Material.Filled.AddComment"
                         Color="Color.Info"
-                        ToggledColor="Color.Info" />
+                        @bind-Toggled="@item.ShowComment"
+                        ToggledColor="Color.Info"/>
                 </MudBadge>
             </MudCardActions>
+            @if (item.ShowComment)
+            {
+                <MudCardContent Style="border-top:1px solid var(--mud-palette-lines-default)">
+                    <Comment Node="CommentNode.Mumble" Relation="@item.Id"></Comment>
+                </MudCardContent>
+            }
         </MudCard>
     }
 

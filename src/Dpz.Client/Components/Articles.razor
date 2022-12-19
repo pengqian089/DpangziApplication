@@ -8,17 +8,19 @@
         }
         <MudCardContent>
             <MudText Typo="Typo.h5" Style="line-height: 0;margin-bottom: .5em">
-                <MudLink Href="@($"/article/{item.Id}")">@item.Title</MudLink>
+                <MudLink Href="@($"/article/read/{item.Id}")">@item.Title</MudLink>
             </MudText>
             @((MarkupString)item.Introduction)
         </MudCardContent>
         <MudCardActions>
-            <MudIcon Icon="@Icons.Material.Filled.AccessTime" Color="Color.Info"/>
-            <MudText Typo="Typo.caption">
-                @item.CreateTime
-            </MudText>
+            <MudTooltip Text="@item.CreateTime.ToString("yyyy/MM/dd HH:mm:ss")">
+                <MudIcon Icon="@Icons.Material.Filled.AccessTime" Color="Color.Info" Size="Size.Small"/>
+                <MudText Typo="Typo.caption" Style="margin-left: .3em;vertical-align: super">
+                    @item.CreateTime.TimeAgo()
+                </MudText>
+            </MudTooltip>
             <MudBadge Content="@item.ViewCount" Color="Color.Primary" Overlap="true" Class="mx-6 my-4">
-                <MudIcon Icon="@Icons.Material.Filled.RemoveRedEye" Color="Color.Info"/>
+                <MudIcon Icon="@Icons.Material.Filled.RemoveRedEye" Color="Color.Info" Size="Size.Small"/>
             </MudBadge>
         </MudCardActions>
     </MudCard>

@@ -6,22 +6,34 @@
     <projectFile kind="XamarinMacOS">Dpz.Client/Dpz.Client.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0b87cc7-5e91-4d83-8425-d5fc7a25b915" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Dpz.Client/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dpz.Client/Pages/Music.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dpz.Client/Pages/Music.razor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dpz.Client/Pages/Music.razor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dpz.Client/Pages/Music.razor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dpz.Client/Resources/AppIcon/appiconfg.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dpz.Client.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Dpz.Client.sln" afterDir="false" />
+    <list default="true" id="892f8572-8cb8-4c55-b3d7-367995ae7345" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/Components/Comment/AddPicture.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/Components/Comment/Avatar.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/Components/Comment/Comment.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/Components/Comment/Comment.razor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/Components/Comment/CommentForm.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/Components/Comment/CommentList.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/Components/Comment/CommentList.razor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/Components/Comment/CommentList.razor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/Components/Comment/CommentText.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/Components/Comment/ShowNickName.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/Components/Comment/ShowNickName.razor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/Data/CommentService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/Enum/CommentNode.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/Library/AppTools.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/Models/CommentContentModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/Models/CommentModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dpz.Client/Models/SendComment.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Dpz.Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Dpz.Client/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dpz.Client/Components/Articles.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Dpz.Client/Components/Articles.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dpz.Client/Components/MarkdownPreview.razor.css" beforeDir="false" afterPath="$PROJECT_DIR$/Dpz.Client/Components/MarkdownPreview.razor.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dpz.Client/Dpz.Client.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Dpz.Client/Dpz.Client.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dpz.Client/Pages/Index.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Dpz.Client/Pages/Index.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dpz.Client/Pages/Index.razor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Dpz.Client/Pages/Index.razor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dpz.Client/Models/MumbleModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Dpz.Client/Models/MumbleModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dpz.Client/Pages/ArticleDetail.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Dpz.Client/Pages/ArticleDetail.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dpz.Client/Pages/ArticleList.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Dpz.Client/Pages/ArticleList.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dpz.Client/Pages/MumbleList.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Dpz.Client/Pages/MumbleList.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dpz.Client/Platforms/Android/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Dpz.Client/Platforms/Android/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dpz.Client/Shared/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Dpz.Client/Shared/NavMenu.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dpz.Client/wwwroot/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dpz.Client/wwwroot/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dpz.Client/_Imports.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Dpz.Client/_Imports.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dpz.Client/wwwroot/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/Dpz.Client/wwwroot/css/app.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,16 +43,22 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5777bf9992ef49bcbe6af99221b3d20a822c00/0d/4497baba/CategoryTypes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5777bf9992ef49bcbe6af99221b3d20a822c00/6b/c7061f7b/MudComponentBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Dpz.Client/Platforms/Android/MainActivity.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Dpz.Client/Platforms/Android/MainApplication.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2J4CTnmuuFFbb899xTu4Y6bjijy" />
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProjectId" id="2It7yWQjPfKkT23qqFyL6jkzXZF" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -51,10 +69,8 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;rider.run.widget.enabled.cache&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.environmentSetup&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\pengq\\AppData\\Local\\JetBrains\\Toolbox\\apps\\Rider\\ch-0\\223.7571.232\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -92,24 +108,64 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a0b87cc7-5e91-4d83-8425-d5fc7a25b915" name="Changes" comment="" />
-      <created>1671327979216</created>
+      <changelist id="892f8572-8cb8-4c55-b3d7-367995ae7345" name="Changes" comment="" />
+      <created>1670989280591</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1671327979216</updated>
-      <workItem from="1671327981077" duration="1659000" />
-      <workItem from="1671330869483" duration="111000" />
-      <workItem from="1671330998570" duration="349000" />
-      <workItem from="1671335372143" duration="8049000" />
-      <workItem from="1671381585809" duration="594000" />
+      <updated>1670989280591</updated>
+      <workItem from="1670989281982" duration="715000" />
+      <workItem from="1670990023685" duration="9393000" />
+      <workItem from="1671002168835" duration="6235000" />
+      <workItem from="1671012159561" duration="1510000" />
+      <workItem from="1671068414050" duration="19096000" />
+      <workItem from="1671419532411" duration="3731000" />
+      <workItem from="1671430926059" duration="7732000" />
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1671011684978</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1671011684978</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fix android error">
+      <created>1671013682752</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671013682752</updated>
+    </task>
+    <task id="LOCAL-00003" summary="banner and mumble page">
+      <created>1671099193929</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671099193929</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="init" />
+    <MESSAGE value="fix android error" />
+    <MESSAGE value="banner and mumble page" />
+    <option name="LAST_COMMIT_MESSAGE" value="banner and mumble page" />
   </component>
 </project>

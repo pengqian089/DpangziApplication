@@ -1,8 +1,5 @@
-﻿@page "/articles"
-@page "/articles/{PageIndex:int}"
-@using Dpz.Client.Models
-@using Dpz.Client.Data
-@using Dpz.Client.Library
+﻿@page "/article"
+@page "/article/{PageIndex:int}"
 
 @if (_isLoading)
 {
@@ -63,7 +60,7 @@ else
     private void ToPageAsync(int page)
     {
         PageIndex = page;
-        Navigation.NavigateTo($"/articles/{page}");
+        Navigation.NavigateTo($"/article/{page}");
     }
 
     protected override async Task OnParametersSetAsync()

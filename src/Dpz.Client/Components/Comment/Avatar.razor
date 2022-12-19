@@ -1,0 +1,20 @@
+﻿<div class="avatar">
+    @if (Commenter is GuestCommenter guestCommenter)
+    {
+        <img src="https://cravatar.cn/avatar/@guestCommenter.EmailMd5" alt="@guestCommenter.NickName"/>
+    }
+    else if(Commenter is MemberCommenter memberCommenter)
+    {
+        var avatar = memberCommenter.Avatar;
+        if (memberCommenter.Avatar.StartsWith("/Home/Image", StringComparison.OrdinalIgnoreCase))
+        {
+            avatar = "https://core.dpangzi.com" + memberCommenter.Avatar;
+        }
+        <img src="@avatar" alt="@memberCommenter.NickName"/>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public Commenter Commenter { get; set; }
+}
