@@ -13,7 +13,8 @@ public static class MauiProgram
     {
         Log.Logger = new LoggerConfiguration().MinimumLevel.Information()
             .WriteTo.Console()
-            .WriteTo.File(Path.Combine("logs", ".log"), rollingInterval: RollingInterval.Day, rollOnFileSizeLimit: true)
+            .WriteTo.File(Path.Combine(FileSystem.Current.AppDataDirectory, "logs", ".log"),
+                rollingInterval: RollingInterval.Day, rollOnFileSizeLimit: true)
             .CreateLogger();
 
         try
